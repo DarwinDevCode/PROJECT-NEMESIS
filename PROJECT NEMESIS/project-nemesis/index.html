@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project Nemesis — Sistema de combate 2D con IA adaptativa. Enfrenta a un enemigo que aprende de tu estilo de juego." />
+    <title>Project Nemesis</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0a0a0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        font-family: 'Courier New', monospace;
+      }
+
+      #game-container {
+        position: relative;
+        width: 960px;
+        height: 540px;
+        border: 2px solid #1a1a2e;
+        box-shadow: 0 0 40px rgba(139, 0, 0, 0.15);
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
